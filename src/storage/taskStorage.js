@@ -19,3 +19,11 @@ export async function loadTasks() {
     return [];
   }
 }
+
+export async function clearTasks() {
+  try {
+    await AsyncStorage.removeItem(STORAGE_KEY);
+  } catch (e) {
+    console.error('Gagal menghapus:', e);
+  }
+}
