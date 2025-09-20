@@ -5,7 +5,6 @@ export default function Layout() {
     <Tabs>
       <Tabs.Screen name="index" options={{ title: 'Home' }} />
       <Tabs.Screen name="add" options={{ title: 'Add' }} />
-      <Tabs.Screen name="progress" options={{ title: 'Progress' }} />
     </Tabs>
   );
 }
